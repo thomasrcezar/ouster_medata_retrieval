@@ -19,3 +19,31 @@ Ouster Sensor Metadata Retrieval Tool  A simple Python script to retrieve metada
 
 ```bash
 git clone https://github.com/thomasrcezar/ouster_medata_retrieval.git
+
+```
+
+### **2. Navigate to the Project Directory** 
+```bash
+cd ouster_metadata_tool
+```
+### **3. Install Dependencies
+It's recommended to use a virtual environment to avoid conflicts with other Python packages.
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+pip install -r requirements.txt
+```
+Without Virtual Environment
+
+```bash 
+pip install -r requirements.txt
+``` 
+### **4. Usage 
+Run the script with the IP address of the Ouster sensor as an argument.
+```bash
+python check_ouster_metadata.py <SENSOR_IP>
+```
+### **5. Example 
+```bash
+python check_ouster_metadata.py 192.168.0.160
+```
